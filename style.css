@@ -61,3 +61,61 @@ h1{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 9999;
 }
+
+@media only screen and (max-width: 600px) {
+
+  /* Override the body background color and image */
+  body {
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+  }
+
+  /* Center the picture and options vertically */
+  #picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+
+  /* Adjust the size of the picture */
+  #picture {
+    max-width: 90vw;
+    max-height: 50vh;
+  }
+
+  /* Adjust the size of the answer option buttons */
+  .option {
+    width: 40px;
+    height: 40px;
+    font-size: small;
+    padding: 5px;
+  }
+
+  /* Override the margin-left for the first answer option button */
+  .option:first-child {
+    margin-left: 0;
+  }
+
+  /* Hide the "Next Picture" button */
+  #next-button {
+    display: none;
+  }
+
+  /* Adjust the font-size and margin for the result message */
+  #result {
+    font-size: small;
+    margin-top: 10px;
+  }
+
+  /* Adjust the size of the "Correct!" checkmark */
+  img[src="checkmark.png"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Adjust the font-size for the "Game Over" message */
+  #game-over {
+    font-size: medium;
+  }
+}
